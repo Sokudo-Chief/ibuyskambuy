@@ -1,0 +1,33 @@
+<script>
+    function updateStats() {
+        $.ajax({
+            url: "/tracker?url={{request.url_rule}}",
+            method: "POST",
+            success: function(html) {
+                let json = JSON.parse(html);
+            }
+        });
+    }
+    
+    updateStats();
+    
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+    
+    function cooldown(){
+        setTimeout(function(){
+            $("button").prop("disabled", true);
+        }, 200);
+        
+        setTimeout(function(){
+            $("button").prop("disabled", false);
+        }, 1500);
+    }
+    
+    $("button").each(function(){
+        $(this).click(function(){
+            cooldown();
+        });
+    });
+    </script>

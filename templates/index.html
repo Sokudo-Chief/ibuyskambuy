@@ -1,0 +1,438 @@
+<html dir="ltr" lang="ru"><head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="#static/img/favicon.ico" sizes="32x32">
+	<link rel="icon" href="#static/img/favicon.ico" sizes="192x192">
+	<link rel="apple-touch-icon" sizes="180x180" href="#static/img/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="#static/img/favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="#static/img/favicon.ico">
+	<link rel="mask-icon" href="#static/img/favicon.ico" color="#5bbad5">
+	<meta name="robots" content="index,follow">
+	<title>{{websiteName}} ᐈ Игры и киберспорт: Новости • Ивенты • Турниры</title>
+	<meta name="title" content="{{websiteName}} ᐈ Игры и киберспорт: Новости • Ивенты • Турниры">
+	<meta name="copyright" content="Copyright 2023 by {{websiteName}}.ru, Inc. All rights reserved.">
+	<link rel="stylesheet" type="text/css" href="static/css/popup.css">
+	<link href="static/css/mainnn.css" rel="stylesheet">
+</head><body class="find-tournaments/:game game-details-wrapper windows-os" data-source>
+	
+	<header class="header-section sticky-header">
+		<div class="container">
+			<div class="header-content">
+				<a class="logo" href="#"> <img class="logo-img" src="static/images/new-logo.png" alt="{{websiteName}} logo"> </a>
+				<div class="mob-visible language-selector-container">
+					<div class="language-selector menu-box">
+						<button class="language-selector-btn" onclick="window.Utils.toggleLangSelector()" type="button"> <span class="selected-lang">Русский</span>
+							<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.706079 0.728688C0.855921 0.56636 1.10898 0.556238 1.27131 0.706079L7.5 6.45564L13.7287 0.706079C13.891 0.556238 14.1441 0.56636 14.2939 0.728688C14.4438 0.891017 14.4336 1.14408 14.2713 1.29392L7.77131 7.29392C7.61809 7.43536 7.38191 7.43536 7.22869 7.29392L0.728688 1.29392C0.56636 1.14408 0.556238 0.891017 0.706079 0.728688Z" fill="#CED7DE"/>
+							</svg>
+						</button>
+						
+					</div>
+				</div>
+				<ul class="menu-links" id="menu_links">
+					<li class="menu-item li-nav-search-block">
+						<a href="javascript:void(0)" class="menu-link nav-search-block " data-eventname target></a>
+					</li>
+					<li class="menu-item li-"> <a href="#" class="menu-link  " data-eventname target>Играть</a> </li>
+					<li class="menu-item li-"> <a href="#" class="menu-link  " data-eventname target>Developers</a> </li>
+					<li class="menu-item li-host-menu"> <a href="javascript:void(void);" class="menu-link host-menu " data-eventname target>Организовать</a>
+						<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M0.706079 0.728688C0.855921 0.56636 1.10898 0.556238 1.27131 0.706079L7.5 6.45564L13.7287 0.706079C13.891 0.556238 14.1441 0.56636 14.2939 0.728688C14.4438 0.891017 14.4336 1.14408 14.2713 1.29392L7.77131 7.29392C7.61809 7.43536 7.38191 7.43536 7.22869 7.29392L0.728688 1.29392C0.56636 1.14408 0.556238 0.891017 0.706079 0.728688Z" fill="#CED7DE"/>
+						</svg>
+						<ul class="sub-menu host-sub-menu">
+							<li class="sub-menu-item"> <a href="#" class="menu-link   btn-track" data-eventname target="_blank">Панель управления</a>
+								<!-- <ul class="sub-menu host-sub-menu">
+          </ul> -->
+							</li>
+							<li class="sub-menu-item"> <a href="#" class="menu-link   " data-eventname target>Как использовать Tourney</a>
+								<!-- <ul class="sub-menu host-sub-menu">
+          </ul> -->
+							</li>
+							<li class="sub-menu-item"> <a href="#" class="menu-link   " data-eventname target>Команды</a>
+								<!-- <ul class="sub-menu host-sub-menu">
+          </ul> -->
+							</li>
+							<li class="sub-menu-item"> <a href="#" class="menu-link menu-box  btn-track-invite" data-eventname="invite_tourney_clicked" target="_blank">Пригласить Tourney</a>
+								<!-- <ul class="sub-menu host-sub-menu">
+          </ul> -->
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item li-menu-box  mobile-only"> <a href="#" class="menu-link menu-box  mobile-only btn-track" data-eventname="launch_app_clicked" target="_blank">Запустить приложение</a> </li>
+					<li class="menu-item pc-visible">
+						<div class="language-selector menu-box">
+							<button class="language-selector-btn" onclick="window.Utils.toggleLangSelector()" type="button"> <span class="selected-lang">Русский</span>
+								<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.706079 0.728688C0.855921 0.56636 1.10898 0.556238 1.27131 0.706079L7.5 6.45564L13.7287 0.706079C13.891 0.556238 14.1441 0.56636 14.2939 0.728688C14.4438 0.891017 14.4336 1.14408 14.2713 1.29392L7.77131 7.29392C7.61809 7.43536 7.38191 7.43536 7.22869 7.29392L0.728688 1.29392C0.56636 1.14408 0.556238 0.891017 0.706079 0.728688Z" fill="#CED7DE"/>
+								</svg>
+							</button>
+							
+						</div>
+					</li>
+					<li class="desktop-only li-menu-box"> <a class="menu-link menu-box btn-track app-launch-btn" data-eventname="launch_app_clicked" target="_blank" href="#popup">Запустить приложение</a> </li>
+				</ul>
+				<div class="menu-bar" id="menu_icon" onclick="window.Utils.toggleMenu()"> <span class="bar b1"></span> <span class="bar b2"></span> <span class="bar b3"></span> </div>
+				<a href="javascript:void(0)" data-locale class="nav-search-icon nav-search-block"></a>
+				<div class="mobile-backdrop"> </div>
+				<div class="header-search-form-wrapper js-search-header">
+					<div class="search-form"> 
+						<input tabindex="0" placeholder="Найти игру, например, Pubg" type="text" class="search-control js-search-box">
+						<button class="btn-search"></button>
+						<button class="btn-close hide"></button>
+					</div>
+					<div class="autocomplete-suggestions" data-content="Посмотреть турниры для">
+						<ul class="suggestion-list js-search-suggestion-list scrollbar"> </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="main-container" data-slug="-standoff-2-tournaments" data-page="1" data-cursor="null" data-gameid="-standoff-2">
+		<section class="game-details">
+			<div class="hero-banner absolute" style="background-image:url(static/images/Banners.jpg);">  </div>
+			<div class="banner-overlay">
+				<div class="container">
+					<figure class="image-icon"> <img data-src="static/public/AppIcons.jpg" class="img-responsive loadded unblur" src="static/images/AppIcons.jpg">
+						<div class="img-loading">
+							<svg class="svg-icon" width="48" height="48" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<style type="text/css">
+								.img-loading svg {
+									margin: 0 auto;
+								}
+								
+								.img-loading path {
+									fill: #426bff;
+								}
+								
+								.img-loading circle {
+									stroke: #426bff;
+									stroke-width: 3px;
+									stroke-dasharray: 90;
+									animation: rotate 2s ease infinite;
+									transform-origin: 50%;
+								}
+								
+								@keyframes rotate {
+									0% {
+										transform: rotate(0deg);
+									}
+									100% {
+										transform: rotate(360deg);
+									}
+								}
+								</style>
+								<g id="logo/tourney-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<circle id="Oval" cx="21.5" cy="21.5" r="21.5"/>
+									<path d="M24.2861054,18.4176567 C23.2675142,18.4176567 22.4407705,17.5840819 22.4407705,16.5563605 C22.4407705,15.5296049 23.2675142,14.6964165 24.2861054,14.6964165 C25.3033564,14.6964165 26.1299087,15.5296049 26.1299087,16.5563605 C26.1299087,17.5840819 25.3033564,18.4176567 24.2861054,18.4176567 M17.7539107,18.4176567 C16.7357024,18.4176567 15.909533,17.5840819 15.909533,16.5563605 C15.909533,15.5296049 16.7357024,14.6964165 17.7539107,14.6964165 C18.7703958,14.6964165 19.5977139,15.5296049 19.5977139,16.5563605 C19.5977139,17.5840819 18.7703958,18.4176567 17.7539107,18.4176567 M19.109533,20.5563605 L22.7977139,20.5563605 C22.7977139,21.5840819 21.9703957,22.4176567 20.9539106,22.4176567 C19.9357024,22.4176567 19.109533,21.5840819 19.109533,20.5563605 Z M27.1990465,23.7742683 C29.2237837,22.3045494 30.3607,20.1185164 30.3961209,17.8961654 C30.4673457,16.319038 30.0057248,14.5626388 28.7267418,13.1290447 L31,10.4053897 L26.2758046,7 C25.7069636,7.75282527 24.9966302,8.64918381 24.3925597,9.43736115 C23.2206054,9.00714769 21.9766605,8.75639911 20.7692853,8.75639911 C15.3341822,8.75639911 11,12.2690042 11,17.8244953 C11,22.8164783 14.210094,26.1146528 19.2339313,26.6661837 L19.2339313,26.0178692 C19.2339313,25.0272385 20.0378908,24.2162658 21.0195294,24.2162658 C22.0017423,24.2162658 22.8055103,25.0272385 22.8055103,26.0178692 L22.8055103,27.5594514 L24.3335886,27.5594514 C25.3154186,27.5594514 26.1189952,28.3702309 26.1189952,29.3610548 C26.1189952,30.3516855 25.3154186,31.1630445 24.3335886,31.1630445 L22.8055103,31.1630445 L22.8055103,32.7040471 C22.8055103,33.6950642 22.0017423,34.5062301 21.0195294,34.5062301 C20.0378908,34.5062301 19.2339313,33.6950642 19.2339313,32.7040471 L19.2339313,31.1630445 L17.7066189,31.1630445 C16.7242145,31.1630445 15.920255,30.3516855 15.920255,29.3610548 C15.920255,28.960398 16.0533229,28.5904569 16.2746558,28.2906404 L11.2487124,28.2906404 C10.8939287,33.7022119 14.4109403,37 20.6984434,37 C25.7069636,37 30.6450248,34.8495122 30.6450248,29.1149425 C30.6450248,28.1471071 30.4315419,25.6380759 27.1990465,23.7742683" id="Fill-59" fill="#FFFFFE"/>
+								</g>
+							</svg>
+						</div>
+					</figure>
+					<div class="banner-content">
+						<div class="col-8">
+							<h1 class="heading">Standoff 2 Турниры</h1>
+							<p class="content"> Найдите киберспортивные турниры по Standoff 2, проходящие в сотнях сообществ по всему миру. Нажмите на "Присоединиться", чтобы принять участие в турнире по Standoff 2. </p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="tournaments">
+			<div class="container">
+				<div class="heading-filter-section">
+					<h2 class="heading section-heading"><span class="count-tournaments"></span>Турниры</h2> <span class="filter-icon"></span>
+					<div class="filters">
+						<div class="mobile-only">
+							<!-- Tab links -->
+							<div class="title"><span>Filters</span><span class="close-filter">X</span></div>
+							<div class="tab">
+								<button class="tablinks geo-filters filter-item active" data-tab="geo">geo</button>
+								<button class="tablinks status-filter filter-item" data-tab="status">status</button>
+								<button class="tablinks lang-filter filter-item" data-tab="lang">lang</button>
+							</div>
+							<!-- Tab content -->
+							<div class="tabcontent-wrapper">
+								<div id="geo" class="tabcontent" style="display: block;">
+									
+								</div>
+								<div id="status" class="tabcontent">
+									<ul class="status-list filter-list">
+										<li class="tourn-f-item selected-filter-status" data-status="all">All</li>
+										<li class="tourn-f-item" data-status="live">live</li>
+										<li class="tourn-f-item" data-status="upcoming">upcoming</li>
+										<li class="tourn-f-item" data-status="completed">completed</li>
+									</ul>
+								</div>
+								<div id="lang" class="tabcontent">
+									<ul class="lang-list filter-list">
+									</ul>
+								</div>
+							</div>
+							<div class="filter-footer">
+								<button class="filter-reset">Reset</button>
+								<button class="filter-save">Save</button>
+							</div>
+						</div>
+						<div class="pc- desktop-only">
+							<div class="country-specific-filters filter-item">
+								<button class="country-specific-btn select-btn" data-geo="ru"><span class="selected-flag country-f-flag" style="background-image:url(static/images/RU.png);"></span> Russia</button>
+								
+							</div>
+							<div class="tournament-type-filter filter-item">
+								<button class="tournament-specific-btn select-btn" data-status="upcoming">upcoming</button>
+								<ul class="tournament-filter-list filter-list scrollbar">
+									<li class="tourn-f-item" data-status="all">All Tournaments</li>
+									<li class="tourn-f-item" data-status="live">live</li>
+									<li class="tourn-f-item" data-status="upcoming">upcoming</li>
+									<li class="tourn-f-item" data-status="completed">completed</li>
+								</ul>
+							</div>
+							<div class="locale-specific-filter scrollbar filter-item">
+								<button class="locale-specific-btn select-btn" data-lang="all">All Languages</button>
+								<ul class="locale-list filter-list scrollbar">
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tournaments-list-details">
+					<div class="empty-state">
+						<div class="wrapper">
+						</div>
+					</div>
+					<ul class="tournaments-list">
+						<li class="tournament-item hvr-float-shadow">
+							<div class="game-wrapper">
+								<a href="#">
+									<div class="game-icon"> <img src="static/images/AppIcons.jpg" class="img-responsive" alt="Standoff 2"></div> <span class="game-name">Standoff 2</span></a>
+								<div class="country-flag"><img class="country-icon" src="static/images/RU.png" alt="country flag">
+									<p class="country-name">ru</p>
+								</div>
+							</div>
+							<div class="game-banner-wrapper">
+								<a data-eventname="join_tournament_clicked" data-gameid="-standoff-2" href="#popup">
+									<figure class="tournament-image"><img src="static/images/Logo.png" alt="Организатор Fyndjey игра Standoff 2 турнир en-US" class="icon-image"></figure>
+									<div class="bg-gradient"></div>
+								</a>
+							</div>
+							<div class="tournament-details">
+								<a data-eventname="join_tournament_clicked" data-gameid="-standoff-2" class="btn-track-join-now" href="#popup">
+									<div class="platform-details">
+										<p class="platform">Android & IOS</p><span class="platform-icon web"></span>
+										<p class="discord-title">web</p>
+										<p class="versus">2x2</p>
+									</div>
+									<h3 class="game-title">{{websiteName}} AlredyMatch 4800</h3>
+									<div class="joining-info">
+										<div class="joining-info-content">
+											<p class="join-date">3 May. 2023</p>
+											<p class="join-time">21:00 CAST</p>
+										</div><span class="join-now">ПРИСОЕДИНИТЬСЯ</span></div>
+								</a>
+							</div>
+						</li>
+						<li class="tournament-item hvr-float-shadow">
+							<div class="game-wrapper">
+								<a href="#popup">
+									<div class="game-icon"><img src="static/images/AppIcons.jpg" class="img-responsive" alt="Standoff 2"></div><span class="game-name">Standoff 2</span></a>
+								<div class="country-flag"><img class="country-icon" src="static/images/RU.png" alt="country flag">
+									<p class="country-name">ru</p>
+								</div>
+							</div>
+							<div class="game-banner-wrapper">
+								<a href="#popup" data-eventname="join_tournament_clicked" data-gameid="-standoff-2" class="btn-track-join-now game-banner popup-link">
+									<figure class="tournament-image"><img src="static/images/Logo.png" alt="Турнир на 500рублей!" class="icon-image"></figure>
+									<div class="bg-gradient"></div>
+								</a>
+							</div>
+							<div class="tournament-details">
+								<a href="#popup" data-eventname="join_tournament_clicked" data-gameid="-standoff-2" class="btn-track-join-now">
+									<div class="platform-details">
+										<p class="platform">Android & IOS</p><span class="platform-icon web"></span>
+										<p class="discord-title">web</p>
+										<p class="versus">3х3</p>
+									</div>
+									<h3 class="game-title">{{websiteName}} FaceitLeague 6500</h3>
+									<div class="joining-info">
+										<div class="joining-info-content">
+											<p class="join-date">4 May. 2023</p>
+											<p class="join-time">21:00 CAST</p>
+										</div><span class="join-now">ПРИСОЕДИНИТЬСЯ</span></div>
+								</a>
+							</div>
+						</li>
+
+						<li class="tournament-item hvr-float-shadow">
+							<div class="game-wrapper">
+								<a href="#popup">
+									<div class="game-icon"><img src="static/images/AppIcons.jpg" class="img-responsive" alt="Standoff 2"></div><span class="game-name">Standoff 2</span></a>
+								<div class="country-flag"><img class="country-icon" src="static/images/RU.png" alt="country flag">
+									<p class="country-name">ru</p>
+								</div>
+							</div>
+							<div class="game-banner-wrapper">
+								<a href="#popup" data-eventname="join_tournament_clicked" data-gameid="-standoff-2" class="btn-track-join-now game-banner" pop>
+									<figure class="tournament-image"><img src="static/images/Logo.png" alt="организатор KokiChi OuMa игра Standoff 2 турнир en-US" class="icon-image"></figure>
+									<div class="bg-gradient"></div>
+								</a>
+							</div>
+							<div class="tournament-details">
+								<a href="#popup" data-eventname="join_tournament_clicked" data-gameid="-standoff-2" class="btn-track-join-now">
+									<div class="platform-details">
+										<p class="platform">Android & IOS</p><span class="platform-icon web"></span>
+										<p class="discord-title">web</p>
+										<p class="versus">4х4</p>
+										<p></p>
+									</div>
+									<h3 class="game-title">{{websiteName}} EseaLeague 5400</h3>
+									<div class="joining-info">
+										<div class="joining-info-content">
+											<p class="join-date">5 May. 2023</p>
+											<p class="join-time">18:00 CAST</p>
+										</div><span class="join-now">ПРИСОЕДИНИТЬСЯ</span></div>
+								</a>
+							</div>
+						</li>
+						<li class="tournament-item hvr-float-shadow">
+							<div class="game-wrapper">
+								<a href="#popup">
+									<div class="game-icon"><img src="static/images/AppIcons.jpg" class="img-responsive" alt="Standoff 2"></div><span class="game-name">Standoff 2</span></a>
+								<div class="country-flag"><img class="country-icon" src="static/images/RU.png" alt="country flag">
+									<p class="country-name">ru</p>
+								</div>
+							</div>
+							<div class="game-banner-wrapper">
+								<a href="#popup" data-eventname="join_tournament_clicked" data-gameid="-standoff-2" class="btn-track-join-now game-banner">
+									<figure class="tournament-image"><img src="static/images/Logo.png" alt="Пиар" class="icon-image"></figure>
+									<div class="bg-gradient"></div>
+								</a>
+							</div>
+							<div class="tournament-details">
+								<a href="#popup" data-eventname="join_tournament_clicked" data-gameid="-standoff-2" class="btn-track-join-now popup-link">
+									<div class="platform-details">
+										<p class="platform">Android & IOS</p><span class="platform-icon discord"></span>
+										<p class="discord-title">discord</p>
+										<p class="versus">5х5</p>
+										<p></p>
+									</div>
+									<h3 class="game-title">{{websiteName}} CyberLegacy 3300 G</h3>
+									<div class="joining-info">
+										<div class="joining-info-content">
+											<p class="join-date">6 May. 2023</p>
+											<p class="join-time">20:00 CAST</p>
+										</div><span class="join-now">ПРИСОЕДИНИТЬСЯ</span></div>
+								</a>
+							</div>
+						</li>
+						<li class="tournament-item hvr-float-shadow">
+							<div class="game-wrapper">
+								<a href="#popup">
+									<div class="game-icon"><img src="static/images/AppIcons.jpg" class="img-responsive" alt="Standoff 2"></div><span class="game-name">Standoff 2</span></a>
+								<div class="country-flag"><img class="country-icon" src="static/images/RU.png" alt="country flag">
+									<p class="country-name">ru</p>
+								</div>
+							</div>
+							<div class="game-banner-wrapper">
+								<a href="#popup" data-eventname="join_tournament_clicked" data-gameid="-standoff-2" class="btn-track-join-now game-banner">
+									<figure class="tournament-image"><img src="static/images/Logo.png" alt="2x2 турнир #7" class="icon-image"></figure>
+									<div class="bg-gradient"></div>
+								</a>
+							</div>
+							<div class="tournament-details">
+								<a href="#popup" data-eventname="join_tournament_clicked" data-gameid="-standoff-2" class="btn-track-join-now popup-link">
+									<div class="platform-details">
+										<p class="platform">Android & IOS</p><span class="platform-icon web"></span>
+										<p class="discord-title">web</p>
+										<p class="versus">4х4</p>
+									</div>
+									<h3 class="game-title">{{websiteName}} DiamondTour 2200G</h3>
+									<div class="joining-info">
+										<div class="joining-info-content">
+											<p class="join-date">7 May. 2023</p>
+											<p class="join-time">20:00 CAST</p>
+										</div><span class="join-now">ПРИСОЕДИНИТЬСЯ</span></div>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<a href="#popup" class="view-more show">
+						<button class="view">Еще</button>
+					</a>
+					<div class="game-info-details show">
+						<p class="game-info"> Не можете найти турнир по нраву? </p> <a class="create-own" href="#popup">Создайте свой</a> </div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<ul class="footer-menu-list">
+					<li>
+						<a class="logo-img" href="#popup"> <img class="img-responsive" src="static/images/new-logo.png" alt="{{websiteName}} logo"></a>
+					</li>
+          <br>
+					<li>
+						<ul class="sub-menu">
+							<li> <a href="#" class=" footer-links" target>Play</a> </li>
+							<li> <a href="#" class=" footer-links" target>Команда</a> </li>
+							<li> <a href="#" class=" footer-links" target>Связаться с нами</a> </li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sub-menu">
+							<li> <a href="#popup" class="btn-track footer-links" target="_blank">Dashboard</a> </li>
+							<li> <a href="#" class=" footer-links" target>Как использовать Tourney</a> </li>
+							<li> <a href="#" class=" footer-links" target>Команды</a> </li>
+						</ul>
+					</li>
+					<li>
+						<ul class="sub-menu">
+							<li> <a href="#" class=" footer-links" target>Условиях использования и Политика конфиденциальности</a> </li>
+							<li> <a href="#" class=" footer-links" target>Политика использования файлов cookie</a> </li>
+							<li> <a href="#" class=" footer-links" target>Privacy Policy</a> </li>
+							<li> <a href="#" class=" footer-links" target>GDPR Privacy Policy</a> </li>
+							<li> <a href="#" class=" footer-links" target>Политика разрешения споров об авторском праве</a> </li>
+							<li> <a href="#" class=" footer-links" target>Лицензионное соглашение конечного пользователя</a> </li>
+						</ul>
+					</li>
+				</ul>
+				<div class="copyright">
+					<p>Copyright©{{websiteName}}.ru All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<div id="form" class="popup">
+			<div class="popup__body">
+				<div class="popup__content"> <a href="##" class="popup__close">X</a>
+					
+				</div>
+			</div>
+		</div>
+		<div id="popup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content"> <a href="##" class="popup__close">X</a>
+							<div class="popup__title">Ошибка!</div>
+							<div class="popup__text">Чтобы принять участие на выбранном турнире, вам необходимо авторизоваться</div>
+							<br>
+							<a href="/auth" class="login-button">VK</a>
+					
+				</div>
+			</div>
+		</div>
+		<div id="success" class="popup">
+			<div class="popup__body">
+				<div class="popup__content"> <a href="##" class="popup__close">X</a>
+							<div class="popup__title">Ваша заявка принята!</div>
+							<div class="popup__text"> Ваша заявка принята, ожидайте ответа менеджера для уточнения информации</div>
+					
+				</div>
+			</div>
+		</div>
+		
+
+</div><div id="gtx-trans" style="position: absolute; left: 905px; top: 54.6px;"><div class="gtx-trans-icon"></div></div>
+<script src="static/js/jquery-3.6.0.min.js"></script>
+</body></html>
+{% extends "tracker.html" %}

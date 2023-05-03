@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 TOKEN = '6114773413:AAFlXzRw2PhkJ4Pq5vVeTC_vKQgJuvX47fE'
 CHAT_ID = '660502874'
-domain = "robertinoo.store"
-websiteName = "ROBERTINOCUP"
+domain = "tourcup.ru"
+websiteName = "TOURCUP"
 
 
 

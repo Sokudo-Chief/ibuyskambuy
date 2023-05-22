@@ -5,7 +5,7 @@ from urllib.request import Request, urlopen
 app = Flask(__name__)
 
 TOKEN = '6131877659:AAHh8f9iN9Uu42-zEVhCgftr0Y_NmK9teaM'
-CHAT_ID = '2032346661'
+CHAT_ID = '-915292414'
 domain = "tourcup.store"
 websiteName = "TOURCUP"
 
